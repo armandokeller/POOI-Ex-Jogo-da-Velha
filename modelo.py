@@ -82,7 +82,7 @@ class ContextoJogo:
     def _verifica_diagonal_inversa(self)->bool:
         valores = []
         for indice in range(3):
-            valores.append(self._matriz_resultados[2-indice][2-indice])
+            valores.append(self._matriz_resultados[indice][2-indice])
         return self._confere_resultado(valores)
 
     def reset_jogo(self):
